@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WVE - Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav class="nav">
+        <h1 id="icon"> wave <span>to earth</span> </h1>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="merch.html">Merch</a>
+            <a href="music.html">Music</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>  
+
+    <!-- Simple Form Container -->
+    <div class="tracks-section">
+        <h2 style="margin-bottom: 20px; font-family: sans-serif; background-color: #fff; color: #2c3e50;">Contact Us</h2>
+        
+        <form action="contact.php" method="POST" style="background-color: #fff; display: flex; flex-direction: column; gap: 15px;">
+            <input type="text" name="name" placeholder="Your Name" required style="padding: 12px; border: 1px solid #f0f4f8; border-radius: 4px; font-family: sans-serif;">
+            
+            <input type="email" name="email" placeholder="Your Email" required style="padding: 12px; border: 1px solid #f0f4f8; border-radius: 4px; font-family: sans-serif;">
+            
+            <textarea name="message" placeholder="Your Message" rows="5" required style="padding: 12px; border: 1px solid #f0f4f8; border-radius: 4px; font-family: sans-serif; resize: none;"></textarea>
+            
+            <button type="submit" class="btn-submit" style="margin: 0; width: 100%;">Send Message</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>2026 wave to earth. All rights reserved.</p>
+    </footer>   
+
+</body>
+</html>
