@@ -16,21 +16,30 @@
         </div>
     </nav>  
 
-    <!-- Simple Form Container -->
-    <div class="tracks-section">
-        <h2 style="margin-bottom: 20px; font-family: sans-serif; background-color: #fff; color: #2c3e50;">Contact Us</h2>
-        
-        <form action="contact.php" method="POST" style="background-color: #fff; display: flex; flex-direction: column; gap: 15px;">
-            <input type="text" name="name" placeholder="Your Name" required style="padding: 12px; border: 1px solid #f0f4f8; border-radius: 4px; font-family: sans-serif;">
-            
-            <input type="email" name="email" placeholder="Your Email" required style="padding: 12px; border: 1px solid #f0f4f8; border-radius: 4px; font-family: sans-serif;">
-            
-            <textarea name="message" placeholder="Your Message" rows="5" required style="padding: 12px; border: 1px solid #f0f4f8; border-radius: 4px; font-family: sans-serif; resize: none;"></textarea>
-            
-            <button type="submit" class="btn-submit" style="margin: 0; width: 100%;">Send Message</button>
-        </form>
-    </div>
+    <div class="contact-layout">
 
+        <div class="tracks-section">
+            <h2>Contact Us</h2>
+            
+            <form action="contact.php" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                
+                <input type="email" name="email" placeholder="Your Email" required>
+                
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </div>
+
+        <div class="map-section">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.513087926462!2d127.04969937582426!3d37.54297367204473!2m3!1
+             f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca490c0443d77%3A0xfa45b6f9fe4d48b2!2s28-16%20Yeonmujang-gil%2C%20Seongdong-gu%2C
+             %20Seoul%2C%20South%20Korea!5e0!3m2!1sen!2sph!4v1782139840622!5m2!1sen!2sph" class="responsive-map"> 
+             </iframe>
+        </div>
+
+    </div>
     <footer>
         <p>2026 wave to earth. All rights reserved.</p>
     </footer>   

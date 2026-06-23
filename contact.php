@@ -1,10 +1,4 @@
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Collecting form data safely
-    $name = isset($_POST['name']) ? htmlspecialchars($_POST['name']) : 'Guest';
-    $email = isset($_POST['email']) ? htmlspecialchars($_POST['email']) : '';
-    $message = isset($_POST['message']) ? htmlspecialchars($_POST['message']) : '';
-?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,16 +17,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
     </nav>  
 
-    <div class="tracks-section" style="font-family: sans-serif; text-align: center;">
-        <h2 style="color: #2c3e50; margin-bottom: 15px; background-color: #fff;">Thank you for contacting us, <?php echo $name; ?>!</h2>
-        <p style="background-color: #fff; color: #555; margin-bottom: 20px;">We have successfully received your message details:</p>
+    <div class="tracks-section success-section">
+        <h2>Thank you for contacting us, <?php echo $name; ?>!</h2>
+        <p class="success-intro">We have successfully received your message details:</p>
         
-        <div style="background-color: #f7f9fa; padding: 20px; border-radius: 6px; text-align: left; border: 1px solid #e2e8f0; margin-bottom: 25px;">
-            <p style="margin-bottom: 10px; background-color: transparent; color: #333;"><strong>Email:</strong> <?php echo $email; ?></p>
-            <p style="background-color: transparent; color: #333; line-height: 1.5;"><strong>Message:</strong> <?php echo $message; ?></p>
+        <div class="message-summary-box">
+            <p class="summary-line"><strong>Email:</strong> <?php echo $email; ?></p>
+            <p class="summary-line message-text"><strong>Message:</strong> <?php echo $message; ?></p>
         </div>
         
-        <a href="contact.html" class="btn-submit" style="text-decoration: none; display: block; text-align: center; margin: 0 auto; width: 100%;">Go Back</a>
+        <a href="contact.html" class="btn-submit back-btn">Go Back</a>
     </div>
 
     <footer>
@@ -42,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </body>
 </html>
 <?php
-} else {
+ else {
     echo "Access denied.";
 }
 ?>

@@ -104,7 +104,7 @@
 
             <div class="w3-container">
 
-                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button">&times;</span>
+                <span onclick="closeModalForLyrics('id01')" class="w3-button">&times;</span>
 
                 <h3>Now Playing: seasons</h3>
 
@@ -174,7 +174,7 @@
 
             <div class="w3-container">
 
-                <span onclick="document.getElementById('id02').style.display='none'" class="w3-button">&times;</span>
+                <span onclick="closeModalForLyrics('id02')" class="w3-button">&times;</span>
 
                 <h3>Now Playing: bad</h3>
 
@@ -270,7 +270,7 @@
 
             <div class="w3-container">
 
-                <span onclick="document.getElementById('id03').style.display='none'" class="w3-button">&tsimes;</span>
+                <span onclick="closeModalForLyrics('id03')" class="w3-button">&times;</span>
 
                 <h3>Now Playing: love.</h3>
 
@@ -348,7 +348,7 @@
 
             <div class="w3-container">
 
-                <span onclick="document.getElementById('id04').style.display='none'" class="w3-button">&times;</span>
+                <span onclick="closeModalForLyrics('id04')" class="w3-button">&times;</span>
 
                 <h3>Now Playing: peach eyes</h3>
 
@@ -464,14 +464,22 @@
 
 
 
+
+
+
+    
+
     <footer>
 
         <p>2026 wave to earth. All rights reserved.</p>
 
     </footer>   
-
-
-
+    <script>
+        function closeModalForLyrics(id)
+        {
+            document.getElementById(id).style.display = 'none';
+        }
+    </script>
 </body>
 
 </html> 
